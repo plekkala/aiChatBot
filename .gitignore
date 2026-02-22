@@ -1,28 +1,29 @@
-# Python virtual environments
+# Virtual environments
 .venv/
 venv/
 env/
 ENV/
 
-# Environment variables and secrets
+# Environment files (keep secrets out of git)
 .env
 .env.*
 
-# Python cache files
+# Python cache / artifacts
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Build artifacts
+# Build / packaging
 build/
 dist/
 *.egg-info/
 
-# VS Code settings
+# Editors / OS
 .vscode/
-
-# macOS system files
+.idea/
 .DS_Store
 
-# Test/coverage outputs
+# Test / coverage
 .pytest_cache/
+coverage.xml
+htmlcov/
