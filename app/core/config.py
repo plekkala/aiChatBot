@@ -7,10 +7,10 @@ class Settings(BaseSettings):
 
     # PostgreSQL
     postgres_host: str = "localhost"
-    postgres_port: int = 5432
+    postgres_port: int = 5433
     postgres_db: str = "doc_chatbot"
     postgres_user: str = "postgres"
-    postgres_password: str = "postgres"
+    postgres_password: str = "yourpassword"
 
     # App
     app_env: str = "development"

@@ -10,11 +10,11 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: yourpassword
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d doc_chatbot -h localhost -p 5432"]
       interval: 5s
       timeout: 5s
       retries: 5
