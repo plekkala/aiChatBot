@@ -1,0 +1,29 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment files (keep secrets out of git)
+.env
+.env.*
+
+# Python cache / artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Test / coverage
+.pytest_cache/
+coverage.xml
+htmlcov/
